@@ -1,0 +1,47 @@
+{
+  "name": "3d-ken-burns-playground",
+  "version": "1.0.0",
+  "description": "3D Ken Burns effect playground using Electron and React",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development && electron .",
+    "package": "electron-builder build --win --publish never",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "3d",
+    "ken burns"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "browserify-fs": "^1.0.0",
+    "buffer": "^6.0.3",
+    "css-loader": "^5.2.6",
+    "electron": "^24.3.0",
+    "electron-builder": "^22.11.7",
+    "file-loader": "^6.2.0",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "style-loader": "^2.0.0",
+    "util": "^0.12.5",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "three": "^0.129.0"
+  }
+}
